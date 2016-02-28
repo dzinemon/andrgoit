@@ -1,0 +1,81 @@
+/*CSS for my first homework at GOT IT FE*/
+/*fixed css*/
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    background-color: #f3f3f3;}
+.container {
+    margin: 0 auto;
+    height: 800px;
+    width: 798px;
+    background-image: url(img/bg.png);
+    background-repeat: repeat;
+    background-color: white;
+    color: #7e7e7e;
+}
+.container>div {
+    padding: 10px 30px;
+}
+ .main {
+    text-align: center;
+}
+h2,h3,h4,h5,h6,li,a {
+    font-family: 'Exo 2', sans-serif;
+    padding: 5px;
+}
+h1 {
+    font:bold 40px/50px 'Rubik', sans-serif;    
+}
+.bold {
+    font-size: larger;
+    color: #3e3e3e;
+}
+#photo {
+    margin: 5px auto;
+    width: 210px;
+    height: 210px;
+    background: white url(img/andrii.jpg) repeat;
+    background-position: center;
+    border-radius: 100%;
+    border: 1px solid #7e7e7e;
+    box-shadow: 2px 2px 2px #dfdfdf;
+    opacity: 0.7;
+}
+#photo:hover {
+    opacity: 1;
+}
+hr {
+    height: 3px;
+    background-color: #9e9e9e;
+    clear: both;
+}
+
+ul>li {
+    position: relative;
+    font-weight: bold;
+    list-style: inside disc;
+}
+ol {
+    position: relative;
+    left: 50%;
+    margin-left: -300px;
+}
+ol>li {
+    font-size: 14px;
+}
+ol>li:last-child {
+    padding-bottom: 0;
+}
+.contacts img {
+    width: 48px;
+    height: auto;
+}
+.contacts div {
+    float:left;
+    margin-left: 20px;
+}
+ a {
+    color: mediumturquoise;
+}
