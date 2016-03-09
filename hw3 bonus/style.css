@@ -1,0 +1,95 @@
+/*This is CSS for web page ASIA Holidays*/
+/*My custom reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,
+ol {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+/*Styling*/
+body { 
+    background: #000000 url(img/bg.jpg) no-repeat fixed top; 
+}
+.container {
+    margin: 0 auto;
+    width: 960px;
+    color: #ffffff;
+    font: normal 11px/12px 'Tahoma';
+}
+/*HEADER*/
+header {
+    margin: 0 70px;
+    height: 200px;
+    background-image: url(img/palm.png);
+    background-repeat: no-repeat;
+    background-position: 140px 53px;
+}
+header div {
+    margin-top: 135px;
+}
+header img {
+/*    margin-bottom: 5px;*/
+}
+header div:first-child {
+    width: 264px;
+    float: left;
+    text-align: center;
+    font-size: 11px;
+}
+header div:last-child {
+    padding-top: 8px;
+    width: 100px;
+    float: right;
+}
+header div p:first-child {
+    font-size: 11px;
+}
+header div p:nth-child(2),
+header div p:last-child {
+    font-size: 9px;
+    line-height: 12px;
+}
+/*SECTION CONTENT FOOTER */
+section, 
+footer {
+    margin: 0 70px;
+    text-align: center;
+}
+section p {
+    font-size: 15px;
+}
+footer {
+    margin: 130px 0 30px;;
+}
+footer p {
+    font-size: 10px;
+}
+.box {
+    display: inline-block;
+    margin: 0 0 50px;  
+}
+.box img {
+    width: 260px;
+    height: 178px;
+/*    border-radius: 5px; The property doesn't work for border-image*/
+    border-width: 5px;
+    border-style: solid;
+    border-image: -webkit-radial-gradient(center, #353535, #989898, #353535); 
+    border-image: -o-radial-gradient(center, #353535, #989898, #353535);
+    border-image: -moz-radial-gradient(center, #353535, #989898, #353535); 
+    border-image: radial-gradient(center, #353535, #989898, #353535); 
+    border-image-slice: 1;
+    box-shadow: 0 0 5px 2px #2e2e2e;
+}
+section .box:first-child,
+section .box:nth-child(2),
+section .box:nth-child(4),
+section .box:nth-child(5) {
+    margin-right: 2px;
+}
+
