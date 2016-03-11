@@ -1,0 +1,246 @@
+/*Styles for ASIA HOLIDAYS MALDIVES*/
+* {
+    padding: 0;
+    margin: 0;
+}
+ul li {
+    list-style-type: none;
+}
+/*STYLING*/
+html {
+    background-color: #0c739f;
+}
+body {
+    width: 100%;
+    height: 1060px;
+    background-image: url(img/mainbgd.png);
+    background-repeat: repeat-x;
+}
+/*BOX SHADOW FOR HEADER and SECTION*/
+header,
+section {
+    box-shadow: 0 2px 9px 3px rgba(0,0,0,0.6);
+}
+/*MAIN CONTAINER*/
+.container {
+    width: 1000px;
+    margin: 0 auto;
+   
+    font: normal 10px/12px Tahoma;
+}
+/*HEADER*/
+header {
+    position: relative;
+    height: 412px;
+    background: #ffffff url(img/bg.jpg) no-repeat 0 175px;  
+    color: #128aa7;
+}
+/*ADDING 1000*1px #128aa7 STRIPEs TO THE HEADERS BACKGROUND IMAGE*/
+header:before {
+    content: '';
+    position: absolute;
+    width: 1000px;
+    height: 1px;
+    left: 0;
+    top: 175px;
+    background-color: #128aa7;
+}
+header:after {
+    content: '';
+    position: absolute;
+    width: 1000px;
+    height: 1px;
+    left: 0;
+    top: 411px;
+    background-color: #128aa7;
+    clear: both;
+}
+/*HEADERs DIV's STYLING AND POSITIONING*/
+header div:first-child {
+    float: left;
+    margin-left: 28px;
+    margin-top: 11px; 
+}
+header div:nth-child(2),
+header div:last-child {
+    float: right;
+    margin-right: 28px;
+}
+header div:nth-child(2) p{
+    font-size: 12px;
+}
+header div:nth-child(2) p:first-child {
+    margin-top: 11px;
+}
+header div:nth-child(2) p:nth-child(2),
+header div:nth-child(2) p:nth-child(3),
+header div:nth-child(2) p:nth-child(4) {
+    margin-top: 7px;
+}
+header div:last-child {
+    margin-top: 30px;
+    clear: right;
+}
+/*LIST OF COUNTRIES STYLING*/
+header ul li{
+    display: inline-block;
+    width: 54px;
+}
+header ul li a {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    background-image: url(img/sprite.png);
+    color: #128aa7;
+}
+/*PSEUDOELEMENTS "after" FOR FLAG-ICONS*/
+header div ul li a:after {
+    position: absolute;
+    width: 54px;
+    top: 45px;
+    left: -6px;
+    text-decoration: underline;
+    text-align: center;
+}
+header div ul li:first-child a:after {
+    content: 'Индия';
+}
+header div ul li:nth-child(2) a {
+    background-position: 210px; 
+}
+header div ul li:nth-child(2) a:after {
+    content: 'Непал';
+}
+header div ul li:nth-child(3) a {
+    background-position: 168px; 
+}
+header div ul li:nth-child(3) a:after {
+    content: 'Тибет';
+}
+header div ul li:nth-child(4) a {
+    background-position: 126px; 
+}
+header div ul li:nth-child(4) a:after {
+    content: 'Бутан'; 
+}
+header div ul li:nth-child(5) a {
+    background-position: 84px; 
+}
+header div ul li:nth-child(5) a:after {
+    content: 'Шри-Ланка'; 
+}
+header div ul li:nth-child(6) a {
+    background-position: 42px; 
+}
+header div ul li:nth-child(6) a:after {
+    content: 'Мальдивы'; 
+}
+/*MENU AND SUBMENU STYLING*/
+ul.menu {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.5);
+}
+ul.menu:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+    width: 140px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #353535;
+    border-bottom: 1px solid #000; 
+}
+ul.menu > li:first-child {
+    padding-left: 10px;
+}
+ul.menu > li:last-child {
+    padding-right: 10px;
+}
+ul.menu > li > a {
+    display: block;
+    padding: 10px 0;
+    color: #ffffff;
+    text-decoration: none;
+}
+/*SUBMENU*/
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 140px;
+    top: 33px;
+    left: 0;
+    background-color: #353535;
+   
+    box-shadow: 0 3px 5px rgba(0,0,0,1);
+}
+ul.submenu > li {
+    display: block;
+    width: 140px;
+   text-align: left;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: #353535;
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+/*CONTENT STYLING*/
+article {
+    width: 1000px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.content {
+    width: 500px;
+    float: left;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+    
+}
+.info,
+.news {
+    width: 250px;
+    background-color: #edeef0;
+    float: left;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}
+article p {
+    margin: 5px 15px;
+    font-size: 12px;
+    line-height: 18px;
+}
+h3, h4 {
+    margin: 15px 0 0 30px;
+}
+/*FOOTER*/
+footer {
+    margin: 20px auto;
+    width: 1000px;
+    color: #ffffff;
+    background-color: transparent;
+    text-align: center;
+    font-size: 12px;
+}
