@@ -35,24 +35,40 @@ ul li {
     display: inline-block;
 }
 header ul li a {
+    display: block;
     color: #ffffff;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
     line-height: 40px;
     font-size: 14px;
     text-shadow: 2px 2px 2px #000000;
 }
-header ul li:first-child {
-    padding: 0 65px 0 25px;
-}
-header ul li:nth-child(2) {
-    padding: 0 25px;
+header ul li a:hover {
     border-left: 1px solid #ffffff;
     border-right: 1px solid #ffffff;
     background: linear-gradient(to bottom,  #4a4a4a, #2e2e2e);
 }
-header ul li:nth-child(3),
-header ul li:last-child {
-    padding: 0 25px 0 65px; 
+header ul li:first-child a {
+    padding: 0 65px 0 25px;
 }
+
+header ul li:nth-child(3) a,
+header ul li:nth-child(2) a,
+header ul li:last-child a {
+    padding: 0 65px 0 65px; 
+}
+
+
+/* header ul li:first-child a {
+    padding: 0 65px 0 25px;
+}
+header ul li:nth-child(2) a {
+    padding: 0 25px;
+}
+header ul li:nth-child(3) a,
+header ul li:last-child a {
+    padding: 0 25px 0 65px; 
+} */
 /*ASIDE MENU*/
 section {
     height: 638px;
@@ -69,15 +85,14 @@ aside li {
     border-bottom: 1px solid #c8c8c8;
 /*    line-height: 38px;*/
 }  
-aside a {
+aside li a {
     padding-left: 23px;
     display: block;
     line-height: 38px;
     font-size: 13px;
     color: #656363;  
 }
-aside ul li:nth-child(3),
-aside a:active {
+aside li a:hover {
     padding-left: 35px;
     color: #2c2c2c;
     background-color: #f9f9f9;
@@ -116,21 +131,26 @@ footer nav {
     background-color: #e1e1e1;
 }
 footer ul li a{
+    display: block;
     color: #2c2c2c;
     line-height: 40px;
     font-size: 14px;
 }
-footer ul li:first-child {
+footer ul li a:hover {
+    text-decoration: underline;
+    background-color: #c8c8c8;
+}
+footer ul li:first-child a {
     padding: 0 65px 0 25px;
 }
-footer ul li:nth-child(2) {
-    padding: 0 25px;
-    text-decoration: underline;
+footer ul li:nth-child(2) a,
+footer ul li:nth-child(3) a,
+footer ul li:nth-child(4) a {
+    padding: 0 65px 0 65px; 
 }
-footer ul li:nth-child(3),
-footer ul li:nth-child(4) {
-    padding: 0 25px 0 65px; 
-}
-footer ul li:last-child {
-    margin-left: 220px;
+footer ul li:last-child{
+    float:right;
+    margin-right: 25px;
+    font-size: 14px;
+    line-height: 40px;
 }

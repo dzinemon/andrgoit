@@ -26,7 +26,7 @@ section {
     width: 1000px;
     margin: 0 auto;
    
-    font: normal 10px/12px Tahoma;
+    font: normal 10px/12px Tahoma, sans-serif;
 }
 /*HEADER*/
 header {
@@ -95,6 +95,9 @@ header ul li a {
     border-radius: 100%;
     background-image: url(img/sprite.png);
     color: #128aa7;
+}
+header ul li a:hover {
+    opacity: 0.7;
 }
 /*PSEUDOELEMENTS "after" FOR FLAG-ICONS*/
 header div ul li a:after {
@@ -198,6 +201,7 @@ ul.submenu > li > a {
     background-color: #353535;
     text-decoration: none;
 }
+ul.menu > li > a:hover,
 ul.submenu > li > a:hover {
     text-decoration: underline;
 }
