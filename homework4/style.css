@@ -67,15 +67,11 @@ header div:last-child {
     margin-right: 28px;
 }
 header div:nth-child(2) p{
+    margin-top: 7px;
     font-size: 12px;
 }
 header div:nth-child(2) p:first-child {
     margin-top: 11px;
-}
-header div:nth-child(2) p:nth-child(2),
-header div:nth-child(2) p:nth-child(3),
-header div:nth-child(2) p:nth-child(4) {
-    margin-top: 7px;
 }
 header div:last-child {
     margin-top: 30px;
@@ -186,7 +182,6 @@ ul.submenu {
     top: 33px;
     left: 0;
     background-color: #353535;
-   
     box-shadow: 0 3px 5px rgba(0,0,0,1);
 }
 ul.submenu > li {
@@ -204,6 +199,7 @@ ul.submenu > li > a {
 ul.menu > li > a:hover,
 ul.submenu > li > a:hover {
     text-decoration: underline;
+    background-color: #1e1e1e;
 }
 
 ul.menu > li:hover > ul.submenu {
