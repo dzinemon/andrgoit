@@ -48,27 +48,15 @@ header ul li a:hover {
     border-right: 1px solid #ffffff;
     background: linear-gradient(to bottom,  #4a4a4a, #2e2e2e);
 }
-header ul li:first-child a {
+header ul li a,
+footer ul li a {
+   padding: 0 65px 0 65px;  
+}
+header ul li:first-child a,
+footer ul li:first-child a {
     padding: 0 65px 0 25px;
 }
 
-header ul li:nth-child(3) a,
-header ul li:nth-child(2) a,
-header ul li:last-child a {
-    padding: 0 65px 0 65px; 
-}
-
-
-/* header ul li:first-child a {
-    padding: 0 65px 0 25px;
-}
-header ul li:nth-child(2) a {
-    padding: 0 25px;
-}
-header ul li:nth-child(3) a,
-header ul li:last-child a {
-    padding: 0 25px 0 65px; 
-} */
 /*ASIDE MENU*/
 section {
     height: 638px;
@@ -140,6 +128,8 @@ footer ul li a:hover {
     text-decoration: underline;
     background-color: #c8c8c8;
 }
+/* LISTED PROPERTIES in header, 
+                    see the code above "header ul li a"
 footer ul li:first-child a {
     padding: 0 65px 0 25px;
 }
@@ -148,6 +138,7 @@ footer ul li:nth-child(3) a,
 footer ul li:nth-child(4) a {
     padding: 0 65px 0 65px; 
 }
+*/
 footer ul li:last-child{
     float:right;
     margin-right: 25px;
