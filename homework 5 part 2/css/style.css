@@ -1,0 +1,87 @@
+/*STYLE FOR HOMEWORK 5 TABLE */
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    margin: 20px;
+}
+table {
+    border-collapse: collapse;   
+}
+td {
+    border: 6px solid #000;
+/*    width: 30px;*/
+    height: 30px;
+}
+/*FIRST ROW*/
+table tr:first-of-type td:first-of-type {
+    width: 72px;
+    height: 30px;
+}
+table tr:first-of-type td:nth-of-type(2) {
+    width: 100px;
+    height: 30px;
+}
+
+table tr:first-of-type td:nth-of-type(3) {
+    background: yellow;
+    width: 90px;
+    height: 30px;
+}
+/*SECOND ROW*/
+table tr:nth-of-type(2) td:first-of-type {
+    width: 30px;
+    height: 70px;
+}
+
+table tr:nth-of-type(2) td:nth-of-type(2) {
+    background: red;
+    height: 150px;
+    width: 140px;
+}
+table tr:nth-of-type(2) td:nth-of-type(3) {
+    background: yellow;
+    width: 80px;
+    height: 70px;
+}
+/*FOURth ROW*/
+table tr:nth-of-type(4) td:first-of-type {
+    width: 30px;
+    height: 110px;
+}
+/*SiXth ROW*/
+table tr:nth-of-type(6) td:first-of-type,
+table tr:nth-of-type(6) td:nth-of-type(2) {
+    background: #2e2e2e;
+}
+/*SEVENth ROW*/
+table tr:nth-of-type(7) td:first-of-type {
+    background: yellow;
+    width: 30px;
+    height: 68px;
+}
+table tr:nth-of-type(7) td:nth-of-type(2),
+table tr:nth-of-type(7) td:nth-of-type(3)
+{
+    background: #2e2e2e;
+}
+table tr:nth-of-type(7) td:nth-of-type(5) {
+    background: blue;
+    width: 80px;
+    height: 50px;
+}
+/*EIGHTth ROW*/
+table tr:nth-of-type(8) td:nth-of-type(2) {
+   background: #2e2e2e;
+    height: 10px;
+    width: 60px;
+}
+table tr:nth-of-type(8) td:first-of-type {
+/*    height: 40px;*/
+    width: 70px; 
+}
+/*NINTH row*/
+table tr:nth-of-type(9) td:first-of-type {
+    height: 10px;
+}

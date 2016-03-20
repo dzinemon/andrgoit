@@ -1,0 +1,262 @@
+/*STYLES FOR HOMEWORK 5*/
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,
+ol {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+/*STYLING*/
+html, body {
+    height: 100%;
+}
+body {
+    background: #fff url(../img/bg.jpg) no-repeat;
+    background-size: cover;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+header {
+    width: 100%;
+    background: #00f url(../img/hbg.jpg) no-repeat;
+    background-size: cover;
+}
+header:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+header div {
+    float: right;
+}
+header div ul li {
+    display: inline-block;
+}
+header div:last-of-type ul li {
+    line-height: 36px;
+}
+header div:last-of-type ul li a {
+    display: block;
+    padding: 0 15px;
+    color: #60b5ed;
+    font-size: 0.88em;
+}
+header div:last-of-type ul li a:hover {
+    color: #fff;
+    background-color: #4eabda;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-out;
+}
+header div:first-of-type ul li:first-of-type {
+    margin: 2px 0;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 15px;
+    height: 32px;
+    line-height: 32px;
+    border-left: 1px solid #56a2dc;
+    box-shadow: -1px 0 0px #56a2dc;
+}
+header div:first-of-type ul li:first-of-type a {
+    color: #fefefe;
+    font-size: 0.88em;
+}
+header div:first-of-type ul li:first-of-type a:hover {
+    opacity: 0.7
+}
+header div:first-of-type ul li:first-of-type a:before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 27px;
+    top: 4px;
+    left: 20px;
+    background: url(../img/flag.png) transparent no-repeat;
+}
+header div:first-of-type ul li:last-of-type {
+    margin-right: 20px;
+    line-height: 34px;
+    padding: 0 15px;
+    background: linear-gradient(#51b1dc, #2e7ac4);
+    border: 1px solid #5da5e0;
+    color: #fff;
+}
+header div:first-of-type ul li:last-of-type a {
+    font-size: 0.88em;
+    color: #feffff;
+    border-bottom: 2px solid #aec8e5;
+}
+header div:first-of-type ul li a:hover {
+    opacity: 0.7;
+}
+span {
+    font-size: 0.88em;
+}
+/*SECTION STYLING*/
+section .container {
+    width: 46%;
+    margin: 5% auto;    
+}
+section .container h1{
+    display: block;
+    margin-bottom: 2px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+section .container>div {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 36px;
+    padding-bottom: 20px;
+}
+section .container>div>a {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    width: 276px;
+    height: 35px;
+    line-height: 33px;
+    background: linear-gradient(#3c5691, #304274);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px -1px 0px #7889b7;
+    font-family: Tahoma, sans-serif;
+}
+section .container>div>a:before {
+    display: block;
+    position: absolute;
+    content: 'f';
+    height: 35px;
+    width: 21px;
+    border-right: 1px solid #1d3c73;
+    left: 15px;
+    font-weight: bold;
+    font-size: 1.5em;
+    box-shadow: 1px 0 0px #4d68ad;
+}
+section .container>div>a:hover {
+/*    box-shadow: 0px 0px 3px 4px #7889b7;*/
+/*    opacity: 0.9;*/
+    box-shadow: 0 0 15px 3px rgba(102, 155, 208, 0.9);  
+}
+section .container>div>a span {
+    margin-left: 67px;
+}
+section .container>div>a b {
+    margin-left: 20px;
+    font-family: monospace;
+    font-size: x-large;
+}
+section .container>div>div {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 74px;
+    width: 276px;
+}
+section .container>div>div div {
+    height: 0;
+    width: 100%;
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #000000;
+}
+section .container>div>div p {
+    margin: 0 10px;
+    text-transform: uppercase;
+    color: #999999;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+/*    line-height: 74px;*/
+}
+form {
+    width: 276px;
+    margin: 0 auto;
+    
+}
+form input {
+    display: block;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+form input[placeholder]:focus {
+/*    box-shadow: 0 0 12px 7px rgba(27, 82, 136, 0.9);*/
+    box-shadow: 0 0 15px 3px rgba(102, 155, 208, 0.9);
+    background-color: rgba(27, 82, 136, 1);
+    outline: none;
+    border-bottom: 1px solid rgba(27, 82, 136, 1);
+    color: #fffbfb;
+    
+}
+form input[placeholder] {
+    
+    width: 256px;
+    height: 35px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: none;
+    border-bottom: 1px solid rgba(74, 74, 72, 1);
+/*    font-family: 'Helvetica Neue', Arial, sans-serif;*/
+    color: #cccccc;
+    background-color: #000;
+}
+form input[type="checkbox"] {
+    margin-bottom: 20px;
+    position: relative;
+/*    font-family: 'Helvetica Neue', Arial, sans-serif;*/
+}
+form input[type="checkbox"]:after {
+    display: inline;
+    width: 270px;
+    left: 20px;
+    top: -2px;
+    position: absolute;
+    color: #cccccc;
+    content: 'Send me Youbike updates and tips';
+}
+form span {
+    color: #fff;
+}
+form input[type="submit"] {
+    margin: 0 auto 20px;
+    background: linear-gradient(#51b1dc, #2e7ac4);
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+/*    font-family: 'Helvetica Neue', Arial, sans-serif;*/
+}
+form input[type="submit"]:hover {
+    box-shadow: 0 0 15px 3px rgba(102, 155, 208, 0.9);  
+}
+section .container>div p {
+    margin: 0 auto;
+    width: 60%;
+    font-size: 0.69em;
+    line-height: 1.5em;
+    text-align: center;
+    color: #cccccc;
+}
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 768px) {
+    body {
+        height: 100vh;
+        background-size: auto;
+    }
+    section .container {
+        width: 90%;
+        margin: 5% auto;    
+        }
+   
+header div:last-of-type ul li a {
+    padding: 0 5px;
+} 
+ 
+}
