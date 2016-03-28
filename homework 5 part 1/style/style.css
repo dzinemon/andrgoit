@@ -270,8 +270,7 @@ section .container>div p {
         background-size: auto;
     }
     section .container {
-        width: 90%;
-        margin: auto;    
+        width: 90%;   
         }
    
 header div:last-of-type ul li a {
