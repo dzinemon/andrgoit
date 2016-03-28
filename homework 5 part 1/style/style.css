@@ -11,8 +11,8 @@ a {
     text-decoration: none;
 }
 /*STYLING*/
-html, body {
-    height: 100%;
+body {
+    height: 100vh;
 }
 body {
     background: #fff url(../img/bg.jpg) no-repeat;
@@ -100,9 +100,22 @@ span {
     font-size: 0.88em;
 }
 /*SECTION STYLING*/
+section {
+    min-height: 640px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 section .container {
     width: 560px;
-    margin: 16% auto;   
+    height: 617px;
+/*    vertical-align: middle;*/
+/*
+    margin-left: auto;
+    margin-right: auto;
+*/
 }
 section .container h1{
     display: block;
