@@ -12,7 +12,7 @@ a {
 }
 /*STYLING*/
 html, body {
-    height: 100%;
+    height: 100vh;
 }
 body {
     background: #fff url(../img/bg.jpg) no-repeat;
@@ -100,9 +100,19 @@ span {
     font-size: 0.88em;
 }
 /*SECTION STYLING*/
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+/*    height: inherit;*/
+    height: 100%;
+}
+
 section .container {
+    margin: 1% auto;
     width: 560px;
-    margin: 16% auto;   
+    height: 617px;
 }
 section .container h1{
     display: block;
@@ -261,11 +271,24 @@ section .container>div p {
     }
     section .container {
         width: 90%;
-        margin: 2% auto;    
+        margin: auto;    
         }
    
 header div:last-of-type ul li a {
     padding: 0 5px;
 } 
- 
+}
+@media only screen and (max-width: 320px) {
+    body {
+        height: 100vh;
+        background-size: auto;
+    }
+    section .container {
+        width: 100%;
+        margin: auto;    
+        }
+   
+    header div:last-of-type ul li a {
+    padding: 0 1px;
+} 
 }
