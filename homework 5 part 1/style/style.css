@@ -11,7 +11,7 @@ a {
     text-decoration: none;
 }
 /*STYLING*/
-html, body {
+body {
     height: 100vh;
 }
 body {
@@ -21,6 +21,7 @@ body {
 }
 header {
     width: 100%;
+    height: 36px;
     background: #00f url(../img/hbg.jpg) no-repeat;
     background-size: cover;
 }
@@ -102,7 +103,7 @@ span {
 /*SECTION STYLING*/
 section {
     position: relative;
-    height: 100%;
+    height: 94.7%;    /*Лучше всего подходит эта высота */
 }
 section .container {
     position: absolute;
