@@ -1,0 +1,889 @@
+/*STYLES for Homework #6*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+ 
+/*                    SYTLING*/
+body {
+/*    background-color: rosybrown;*/
+}
+/*                    HEADER*/
+.container {
+    width: 1000px;
+    margin: 0 auto;
+/*    background-color: yellow;*/
+
+}
+
+.wrapper {
+    width: 910px;
+    margin: 0 auto;
+}
+/*
+header, nav, main, section {
+    margin: 0 auto;
+}
+*/
+header:after,
+nav:after,
+main section:first-of-type:after,
+main section:nth-of-type(2):after {
+    display: block;
+    content: "";
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+header {
+    padding-top: 18px;
+}
+header div:first-child {
+    margin-top: 3px;
+    margin-left: 1px;
+    width: 312px;
+    float: left;
+}
+header div:first-child ul li {
+    position: relative;
+    display: inline-block;
+    padding-right: 1px;
+    font: normal 19px/26px Arial, sans-serif;
+    color: #5e696d;
+    
+}
+header div:first-child ul {
+    margin-left: 30px;
+}
+header div:first-child ul li:first-child:before {
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: -24px;
+    content: '';
+    width: 22px;
+    height: 25px;
+    background: url(../img/phone.png) transparent no-repeat;
+}
+/*                    HEADER  FORM*/
+form>img {
+    margin-left: 7px;
+    margin-top: 3px;
+}
+header form {
+    display: inline-block; 
+    margin-top: -1px;
+    float: left;
+    width: 496px;
+    height: 27px;
+    background-image: linear-gradient(to bottom, #1f6787, #0c3357);
+    box-shadow: 2px 2px 5px #969696;
+    border: 1px solid #a6c3cf;
+    border-radius: 5px;
+    font-size: 10px;
+}
+header form input {
+    font-family: 'Lucida Sans Unicode';
+    vertical-align: middle;
+    margin-top: -13px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+header form input[placeholder] {
+    padding-left: 4px;
+    width: 109px;
+    height: 16px;
+    border-radius: 2px;
+    border: none;
+    box-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
+    line-height: 16px;
+/*    vertical-align: middle;*/
+    font-size: 10.7px;
+}
+header form input[type="submit"],
+header form input[type="button"] {
+    background: transparent;
+    height: 14px;
+    border: none;
+    border-bottom: 1px solid transparent;
+    color: #fff;
+    font-size: 10.7px;
+    line-height: 11px;
+    cursor: pointer;
+}
+header form input[type="button"]:first-child {
+    margin-left: 5px; 
+    letter-spacing: 0.7px;
+}
+
+header form input[type="button"]:last-child {
+    margin-left: 15px;
+    letter-spacing: 0.7px;
+}
+header form input[type="submit"]:hover,
+header form input[type="button"]:hover {
+    color: #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+}
+header form input[type="submit"] {
+    margin-right: 0px;
+    margin-left: 3px;
+    letter-spacing: 0.4px;
+/*    border-right: 1px solid #fff;*/
+}
+header form>div {
+    display: inline-block;
+    margin-bottom: 3px;
+    width: 1px;
+    height: 10px;
+    background-color: #fff;
+/*    box-shadow: -1px 0px 0px #fff;*/
+}
+/*                    HEADER DIV after FORM*/
+header form+div {
+    margin-top: 1px;
+    margin-left: 15px;
+    float: left;
+    width: 76px;
+    height: 21px;
+    box-shadow: 0px 0px 6px #969696;
+    border-radius: 21px; 
+}
+header form+div ul li {
+    display: inline-block;
+    margin: 1px -4px 0 9px;
+}
+
+/*                    HEADER LAST DIV*/
+header div:last-child img{
+    margin: 7px auto 2px;
+}
+/*                        NAV STYLING*/
+nav {
+    width: 910px;
+    height: 33px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to bottom, #4d5663, 5px, #010101);
+    border-top-left-radius: 6px 3px; 
+    border-top-right-radius: 6px 3px;
+    border-bottom-right-radius: 6px 3px;
+    border-bottom-left-radius: 6px 3px;
+    border: 1px solid #2c345a;
+    font-family: 'Lucida Sans Unicode';
+    box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.55);
+}
+nav ul {
+    float: left;
+}
+nav ul:first-child {
+    margin-left: 127px;
+}
+nav ul:last-child {
+    margin-left: 80px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+}
+nav ul li a {
+    padding: 2px 18px;
+    border-radius: 18px;
+    color: #b1bcc0;
+    font-size: 13.64px;
+    letter-spacing: 0.2px;
+}
+nav ul:first-child li:nth-child(2) {
+    margin-left: -8px;
+}
+nav ul:first-child li:nth-child(3) {
+    margin-left: -12px;
+}
+nav ul:first-child li:nth-child(4) {
+    margin-left: -13px;
+}
+nav ul:first-child li:nth-child(5) {
+    margin-left: -16px;
+}
+nav ul li a:hover {
+    background-image: linear-gradient(to bottom, #25617b, #09233b);
+    color: #ffffff;
+}
+nav ul:last-child {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #929b9f;
+    letter-spacing: 0.5;
+}
+nav ul:last-child li:first-child {
+    position: relative;
+    margin-right: 10px;
+}
+nav ul:last-child li:first-child:before {
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: -28px;
+    content: '';
+    width: 21px;
+    height: 17px;
+    background: url(../img/cart.png) transparent no-repeat;
+}
+nav span {
+    color: #0d5a8f;
+    font-size: 12px;
+    font-family: Arial, sans-serif;  
+}
+nav span:first-of-type {
+    margin-left: -2px;
+}
+nav ul:last-child li:last-of-type span {
+    margin-left: 8px;
+}
+/*                        MAIN STYLING*/
+ 
+    
+main section:first-of-type>div:first-child {
+    margin-left: 5px;
+    width: 412px;
+    height: 132px;
+}
+main section:first-of-type>div:nth-child(2) {
+    width: 192px;
+    height: 134px;
+    margin-left: 14px;
+}
+main section:first-of-type>div:last-child {
+    width: 266px;
+    height: 133px;
+    margin-left: 9px;
+}
+/*    PROPS FOR ALL DIVS in MAIN*/
+main section:first-child >div {
+    position: relative;
+    float: left;
+    box-shadow: 2px 3px 8px #686868;
+    border-radius: 19px;
+    border: 1px solid #b6b6b7;
+    font-family: Arial, sans-serif;
+}
+/*                    TABLE*/
+main section div:first-child table {
+    border-collapse: collapse;
+}
+main section div:first-child form {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    padding-top: 4px;
+}
+main section>div:first-child form legend {
+    position: absolute;
+    top: -2px;
+    left: 124px;
+    color: #154467;
+    font-size: 12.5px;
+    font-weight: bold;
+    font-family: 'Arial black';
+}
+
+main section>div table span {
+    width: 71px;
+    color: #77858b;
+    font-size: 8px;
+    letter-spacing: 1.1px;
+}
+form[id='search'] fieldset table thead th {
+    padding-left: 4px;
+    padding-right: 6px;
+    vertical-align: initial;
+    color: #154468;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'Arial black';
+}
+form[id='search'] fieldset:first-of-type table thead th {
+    text-align: left;
+}
+form[id='search'] fieldset:last-of-type table thead th {
+    text-align: right;
+}
+form[id='search'] fieldset:last-of-type table {
+    margin-top: -2px;
+}
+main section>div:first-child table td:first-child {
+    width: 76px;
+    line-height: 8px;
+/*    height: 22px;*/
+    font-size: 10.4px;
+}
+main section>div:first-child table tr {
+/*    height: 13px;*/
+    vertical-align: bottom;
+}
+form[id='search'] fieldset table tr:last-child td:first-child {
+    padding-top: 6px;
+    vertical-align: middle;
+}
+form[id='search'] fieldset table tr:first-child td:first-child {
+    padding-top: 8px;
+    vertical-align: middle;
+}
+
+main section>div:first-child table tr:nth-child(3) td:last-child select {
+    width: 58px;
+}
+main section>div:first-child form fieldset,
+main section>div:nth-child(2) form fieldset,
+main section>div:nth-child(3) form fieldset {
+    float: left;
+    border: none;
+}
+main section>div:first-child form fieldset {
+    margin: -1px 12px 0 16px;
+}
+main section>div:nth-child(2) form fieldset {
+    margin: -2px 3px 0 8px;
+}
+main section>div:nth-child(3) form fieldset:first-child {
+    margin: -3px 7px 0 7px;
+}
+
+main section>div:first-child select {
+    float: left;
+    margin-top: 5px;
+/*    margin-bottom: 2px;*/
+    width: 101px;
+    height: 17px;
+    box-shadow: inset 2px 2px 3px #686868;
+    border: none;
+}
+button[type="submit"] {
+    border: none;
+    float: right;
+    margin-top: 6px;
+    margin-right: 20px;
+    background-color: transparent;
+    color: #154467;
+    border-bottom: 2px solid #a6b1bc;
+    line-height: 14px;
+    font-size: 14px;
+    font-style: italic;
+    cursor: pointer;
+}
+/*                    SECOND FORM TYRESEARCH*/
+#tyresearch table {
+/*    margin-top: -8px;*/
+/*    width: 168px;*/
+}
+#tyresearch table thead th,
+#rimsearch table thead th {
+    color: #114165;
+    font-family: 'Arial black';
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+}
+#tyresearch table tr td:first-child {
+    color: #000;
+    font-size: 10px;
+    font-family: 'Lucida Sans Unicode';
+/*    text-align: right;*/
+}
+
+select+p {
+    margin: 0 4px;
+    display: inline;
+    font-size: 15px;
+    line-height: 15px;
+    vertical-align: bottom;
+}
+#tyresearch table tr:nth-child(2) td:first-child {
+    padding-right: 4px;
+    padding-top: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    text-align: right;
+    vertical-align: middle;    
+}
+#tyresearch table tr:first-child td:first-child {
+    padding-right: 4px;   
+    padding-left: 3px;
+    padding-top: 12px;
+    vertical-align: bottom;
+    line-height: 10px;
+}
+#tyresearch table tr:nth-child(3) td:first-child {
+    vertical-align: baseline;
+    padding-top: 2px;
+    padding-left: 4px;
+}
+#tyresearch table tr:nth-child(3) td:nth-child(2) {
+    padding-top: 6px;
+    line-height: 13px;
+}
+#tyresearch tr:first-of-type select {
+    width: 53px;
+}
+#tyresearch tr:nth-of-type(2) select {
+    width: 46px;
+}
+#tyresearch select,
+#rimsearch select {
+    height: 17px;
+    box-shadow: inset 2px 2px 3px #686868;
+    border: none;
+    font-size: 11px;
+}
+#tyresearch fieldset table tr:nth-of-child(3) select {
+    width: 48px;
+}
+#tyresearch label {
+    margin-left: -4px;
+    vertical-align: bottom;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 12px;
+}
+#tyresearch button {
+    margin-top: -5px;
+}
+/*                        THIRD FORM RIMSEARCH*/
+#rimsearch table:first-of-type {
+/*    margin-top: -3px;*/
+}
+#rimsearch fieldset {
+    float: left;
+}
+#rimsearch fieldset:last-of-type  {
+    border-left: 1px solid #bdc6ca;
+}
+#rimsearch fieldset:first-of-type table span {
+    letter-spacing: 0.9px;
+    font-size: 9.7px;
+    line-height: 10px;
+}
+#rimsearch fieldset:last-of-type table span {
+    line-height: 7px;
+}
+#rimsearch fieldset:last-of-type table tr:nth-child(3) span {
+    letter-spacing: 0.7px;
+}
+
+#rimsearch fieldset:last-of-type table {
+    margin-left: 8px;
+    margin-top: 4px;
+    width: 75px;
+}
+#rimsearch table thead th {
+    letter-spacing: 0.9px;
+}
+#rimsearch table td:first-child {
+    font-size: 10px;
+    line-height: 8px;
+    letter-spacing: 0.6px;
+}
+#rimsearch fieldset:first-child table td:first-child {
+    padding-left: 7px;
+    width: 88px;
+/*    height: 25px;*/
+}
+#rimsearch fieldset:first-child table tr:first-child td {
+    vertical-align: baseline;
+    letter-spacing: 0.8px;
+}
+#rimsearch fieldset:first-child table tr:nth-child(2) td {
+    padding-top: 2px;
+    vertical-align: bottom;
+    letter-spacing: 0.8px;
+}
+#rimsearch fieldset:first-child table tr:nth-child(3) td {
+    letter-spacing: 0.8px;
+}
+#rimsearch fieldset:first-child table tr:nth-child(2) td:last-child {
+    padding-bottom: 1px;
+}
+#rimsearch fieldset:first-child table tr:nth-child(3) td:last-child {
+    padding-top: 2px;
+}
+#rimsearch fieldset:first-child tr:nth-of-type(2) select {
+    width: 52px;
+}
+#rimsearch fieldset:first-child tr:first-of-type select,
+#rimsearch fieldset:first-child tr:last-of-type select,
+#rimsearch fieldset:last-of-type tr select {
+    width: 58px;
+}
+#rimsearch table td:last-child {
+    width: 60px;
+}
+#rimsearch fieldset:last-of-type table tr:nth-child(2) select {
+    margin-top: 2px;
+}
+#rimsearch fieldset:last-of-type table tr:nth-child(4) select {
+    margin-top: 2px;
+}
+#rimsearch fieldset:last-of-type table tr:nth-child(3) td {
+    padding-top: 6px;
+    letter-spacing: -0.1px;
+}
+#rimsearch button[type="submit"] {
+    margin-top: 3px;
+    margin-right: 18px;
+}
+/*    CATALOGUE SECTION CENTRAL DIV & BRAND SECTION*/
+
+main section:nth-of-type(2) {
+    margin-top: 16px;
+}
+main section:nth-of-type(2)>aside,
+main section:nth-of-type(2)>div {
+    float: left;
+}
+main section:nth-of-type(2)>aside {
+    color: #114165;
+    font-family: 'Lucida Sans Unicode';
+}
+main section:nth-of-type(2)>aside:first-child {
+/*    background-color: honeydew;*/
+    margin-top: 2px;
+}
+main section:nth-of-type(2)>aside>div:first-of-type {
+    width: 181px;
+    height: 25px;
+    margin-bottom: 14px;
+    border-radius: 25px;
+    border: 1px solid #8c969a;
+    box-shadow: 2px 2px 5px #969696;
+    
+}
+main section:nth-of-type(2)>aside:first-child div p {
+    margin-top: 3px;
+    margin-left: 27px;
+    font-size: 12.73px;
+}
+main section:nth-of-type(2)>aside div>div {
+    margin: 2px 0 2px 1px;
+    width: 22px;
+    height: 21px;
+    float: left;
+    background-image: linear-gradient(to bottom, #1f6786, #0c3357);
+    border-radius: 100%;
+}
+main section:nth-of-type(2)>aside div>div img {
+    margin: 3px 5px;
+}
+
+section aside:first-of-type div>ul>li>div {
+    padding: 0 3px 0 5px;
+    width: 142px;
+    height: 25px;
+    border: 1px solid #8c969a;
+    border-radius: 25px;
+}
+section aside div>ul>li span {
+    display: inline;
+    padding-left: 2px;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 25px;
+}
+section aside ul>li>ul {
+    margin-bottom: -4px;
+}
+li>ul>li {
+/*    list-style-image: url(../img/listmarker.png);*/
+    list-style-position: inside;
+    padding-left: 47px;
+}
+li>ul>li a:before {
+    position: absolute;
+    content: '';
+    top: 7px;
+    left: -12px;
+    height: 10px;
+    width: 10px;
+    background-image: url(../img/listmarker.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+li>ul>li a {
+    position: relative;
+    display: block;
+    height: 26px;
+    color: #465961;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0.4px;
+}
+li>ul>li a:hover:before {
+    background-image: url(../img/listboldmarker.png);
+}
+li>ul>li a:hover {
+    color: #0c3256;
+    line-height: 26px;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    text-decoration: underline;
+}
+li>ul>li:hover {
+/*    list-style-image: url(../img/listboldmarker.png);*/
+}
+
+/*                        CENTRAL DIV WITH TYRE FIGURES*/
+main section:nth-of-type(2)>div {
+    padding-top: 11px;
+    width: 527px;
+    height: 614px;
+    margin: 0 8px;
+    background-image: linear-gradient(to bottom, #e5e7e8, #93a7b0);
+    border-top: 1px solid #f3f4f4;
+    border-radius: 3px;
+}
+main section:nth-of-type(2)>div figure {
+    float: left;
+    margin-top: 2px;
+    margin-left: 22px;
+    margin-right: 7px;
+/*    margin-bottom: 20px;*/
+    text-align: center;
+}
+main section:nth-of-type(2)>div figure>div {
+    margin-bottom: 4px;
+    width: 137px;
+    height: 127px;
+    background-color: #fff;
+    border: 1px solid #a7b1b4;
+    border-radius: 8px;
+   
+}
+main section:nth-of-type(2)>div figure>div img {
+    margin-top: 5px;
+}
+figure figcaption {
+    font-family: 'Lucida Sans Unicode';
+    line-height: 13px;
+}
+figure figcaption a {
+    font-size: 15px;
+    font-weight: bold;
+    color: #206988;
+}
+figure figcaption a:hover {
+    opacity: 0.7;
+}
+figure figcaption p {
+    font-size: 12.77px;
+}
+figure i {
+    display: block;
+    float: left;
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #114165;
+}
+figure i span {
+    font-size: 12px;
+}
+figure:first-of-type i,
+figure:nth-of-type(4) i,
+figure:nth-of-type(7) i {
+    margin-left: 38px;
+}
+figure:nth-of-type(2) i,
+figure:nth-of-type(3) i,
+figure:nth-of-type(5) i,
+figure:nth-of-type(6) i,
+figure:nth-of-type(8) i,
+figure:nth-of-type(9) i {
+    margin-left: 34px;
+} 
+figure:nth-of-type(3) i {
+    margin-left: 34px;
+} 
+figure:nth-of-type(4),
+figure:nth-of-type(5),
+figure:nth-of-type(6) {
+    margin-bottom: 22px;
+}
+figure:first-of-type,
+figure:nth-of-type(2),
+figure:nth-of-type(3),
+figure:nth-of-type(4),
+figure:nth-of-type(7),
+figure:nth-of-type(8),
+figure:nth-of-type(9) {
+    margin-bottom: 20px;
+}
+
+/*                ASIDE WITH BRANDS*/
+main section:nth-of-type(2)>aside:last-child div p {
+    margin-top: 3px;
+    margin-left: 31px;
+    font-size: 13.73px;
+    line-height: 20px;
+}
+main section:nth-of-type(2)>aside:last-child div>div {
+    margin: 1px 0 2px 3px;
+    height: 22px;
+}
+section aside:last-of-type div>ul>li>div {
+    width: 128px;
+    height: 25px;
+    border: 1px solid #8c969a; 
+    border-radius: 13px;
+}
+section aside:last-of-type div>ul>li:first-of-type>div {
+    padding: 1px 3px 0 5px;
+}
+main section aside:last-of-type div>ul>li:last-of-type>div {
+    padding: 1px 3px 0 3px;
+}
+#brands div {
+    margin-left: 7px;
+    margin-top: 13px;
+}
+section aside:last-child div>ul>li span {
+    display: inline;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 25px;
+}
+section aside:last-child div>ul>li:first-of-type span {
+    padding-left: 3px;
+}
+section aside:last-child div>ul>li:last-of-type span {
+    padding-left: 4px;
+}
+
+#brands label {
+    display: block;
+    margin: 9px 0 11px;
+    padding-left: 17px;
+/*    height: 15px;*/
+    color: #465961;
+    vertical-align: bottom;
+    font-size: 13px;
+    line-height: 14px;
+}
+
+
+#brands label input {
+    margin-right: 12px;
+    vertical-align: bottom;
+}
+button[form="brands"] {
+    margin-top: 10px;
+    margin-left: 17px;
+    width: 82px;
+    height: 27px;
+    background-image: linear-gradient(to bottom, #1f6787, #0c3357);
+    box-shadow: 1px 1px 3px #7a95a1;
+    border-radius: 26px;
+    border: 1px solid #7a95a1;
+    color: #e5e9ea;
+    line-height: 25px;
+    font-size: 12px;
+    cursor: pointer;
+}
+/*                    LAST SECTION WITH BRANDS*/
+main section:nth-of-type(3) {
+    margin: 38px auto 21px;
+    width: 680px;
+}
+main section:nth-of-type(3) a {
+    display: inline-block;
+    height: 27px;
+    background: url(../img/brandsprite.png) no-repeat;
+    margin:0 3px;
+}
+main section:nth-of-type(3) a:first-child {
+    width: 84px;
+    background-position: 0;
+}
+main section:nth-of-type(3) a:nth-child(2) {
+    width: 97px;
+    background-position: -95px 0;
+}
+
+main section:nth-of-type(3) a:nth-child(3) {
+    width: 77px;
+    background-position: -203px 0;
+}
+
+main section:nth-of-type(3) a:nth-child(4) {
+    width: 67px;
+    background-position: -289px 0;
+}
+main section:nth-of-type(3) a:nth-child(5) {
+    width: 77px;
+    background-position: -367px 0;
+}
+main section:nth-of-type(3) a:nth-child(6) {
+    width: 63px;
+    background-position: -454px 0;
+}
+main section:nth-of-type(3) a:nth-child(7) {
+    width: 65px;
+    background-position: -526px 0;
+}
+main section:nth-of-type(3) a:nth-child(8) {
+    width: 74px;
+    background-position: -601px 0;
+}
+
+/*                        FOOTER STYLING*/
+footer {
+    width: 908px;
+    height: 100px;
+    border-top: 1px solid #242a3c;
+    border-left: 1px solid #242a3c;
+    border-right: 1px solid #242a3c;
+    background-color: #213a4d;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+footer ul {
+    margin-top: 7px;
+    margin-left: 7px;
+    margin-bottom: 12px;
+}
+footer ul li {
+    display: inline-block;
+    height: 11px;
+    line-height: 10px;
+    padding: 0 12px 0 10px;
+}
+footer ul li:first-child,
+footer ul li:nth-child(2),
+footer ul li:nth-child(3) {
+    border-right: 2px solid #bec6c9;
+}
+footer p {
+    color: #7f4740;
+    font-size: 10px;
+}
+footer ul li a {
+    color: #bec6c9;
+    font-size: 12px;
+    
+}
+footer ul li a:hover {
+    color: #52abcb;
+}
+button:hover {
+    opacity: 0.8;
+}

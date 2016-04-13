@@ -21,7 +21,6 @@ body {
 }
 header {
     width: 100%;
-    height: 36px;
     background: #00f url(../img/hbg.jpg) no-repeat;
     background-size: cover;
 }
@@ -270,25 +269,31 @@ section .container>div p {
         height: 100vh;
         background-size: auto;
     }
+    section {
+        height: 100%;
+    }
     section .container {
         width: 90%;   
         }
    
-header div:last-of-type ul li a {
-    padding: 0 5px;
+    header div:last-of-type ul li a {
+        padding: 0 5px;
 } 
 }
+
 @media only screen and (max-width: 320px) {
     body {
         height: 100vh;
         background-size: auto;
     }
+    section {
+        height: 100%;
+    }
     section .container {
         width: 100%;
-        margin: auto;    
+        position: static;
         }
-   
     header div:last-of-type ul li a {
-    padding: 0 1px;
+        padding: 0 1px;
 } 
 }
