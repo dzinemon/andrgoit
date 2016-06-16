@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Homework Part 1</title>
+    <script type="text/javascript">
+        var x = prompt( 'Enter integral number', '' );
+          
+        var y = prompt( 'Enter extent', '' );
+          if ( y <= 1 ) {
+              alert( 'This extent ' + y + ' cannot be processed, please enter integral number y > 0' );
+          }
+          else {
+             console.log( pow( x, y ) );
+          }
+        
+        function pow( x, y ) {
+            var result = x;
+            
+            for ( var i = 1; i < y; i++ ) { 
+                result *= x;
+                }
+            
+            return result;
+        }
+        
+        
+    </script>
+</head>
+<body>
+ 
+</body>
+</html>
