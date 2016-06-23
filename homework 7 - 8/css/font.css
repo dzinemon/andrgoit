@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'League Gothic';
+	src: url('../fonts/league-gothic-webfont.eot');
+	src: url('../fonts/league-gothic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/league-gothic-webfont.woff') format('woff'),
+		 url('../fonts/league-gothic-webfont.ttf') format('truetype'),
+		 url('../fonts/league-gothic-webfont.svg#FontName') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/opensans-light-webfont.eot');
+	src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/opensans-light-webfont.woff') format('woff'),
+		 url('../fonts/opensans-light-webfont.ttf') format('truetype'),
+		 url('../fonts/opensans-light-webfont.svg#FontName') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
