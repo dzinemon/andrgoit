@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<title>JS HW5-6 · Stopwatch</title>
+</head>
+
+<body>
+	<div class="wrapper" id="output">
+		<div class="digits clearfix">
+			<p class="basic-text" id="hms">00:00:00</p>
+			<p class="sub-text" id="ms">000</p>
+		</div>
+		<div class="controls clearfix">
+			<button class="basic-text" id="startPause" onclick="startPause()">Start</button>
+			<button class="basic-text" onclick="reset()">Reset</button>
+		</div>
+	</div>
+	
+	<script>
+		var time = 0;
+		var running = 0;
+		
+		function startPause() {
+			if (running == 0) {
+				running = 1;
+				increment();
+				document.getElementById(
+			"startPause").innerHTML = "Pause";
+			}
+			else {
+				running = 0;
+				document.getElementById('startPause').innerHTML = "Resume";
+			}
+		}
+		
+		function reset() {
+			running = 0;
+			time = 0;
+			document.getElementById("startPause").innerHTML = "Start";
+			document.getElementById("hms").innerHTML = "00:00:00";
+			document.getElementById("ms").innerHTML = "000";
+		}
+		
+		function increment() {
+			if (running == 1) {
+				setTimeout(function(){
+					time++;
+					var mins = Math.floor(time/10/60);
+					var secs =  Math.floor(time/10 % 60);
+					var hours = Math.floor(time/10/60/60);
+					var tens = time % 10;
+//					var tens = Math.floor(time/10/100);
+					
+//					var time = new Date(timeInMilliseconds);
+//					var hours = time.getHours().toString();
+//					var minutes = time.getMinutes().toString();
+//					var seconds = time.getSeconds().toString();
+//					var tens = time.getMilliseconds().toString();
+//					
+					
+					
+					if (mins < 10) {
+						mins = "0" + mins;
+					}
+					
+					if (secs < 10) {
+						secs = "0" + secs;
+					}
+					
+					if (hours < 10) {
+						hours = "0" + hours;
+					} 
+					
+					while (tens.length < 3) {
+//						tens = "0" + tens;
+					}
+										
+					document.getElementById('hms').innerHTML = hours + ":" + mins + ":" + secs;
+					document.getElementById('ms').innerHTML = tens + "";
+					
+					increment();
+					
+				}, 100)	
+			}
+			
+			
+		}
+	</script>
+</body>
+
+</html>

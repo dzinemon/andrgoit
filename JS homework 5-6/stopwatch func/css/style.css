@@ -1,0 +1,21 @@
+body {
+	background-color: #5f5f5f;
+}
+
+.digits {
+	color: #fff;
+	font-family: cursive;
+	font-size: 30px;
+}
+
+button {
+	
+	width: 200px;
+	padding: 10px 0;
+	background: firebrick;
+	color: #fff;
+	font-family: cursive;
+	text-transform: uppercase;
+	font-weight: 600;
+	
+}
