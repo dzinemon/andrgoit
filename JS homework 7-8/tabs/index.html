@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<title>JS HW 3 · Tabs</title>
+</head>
+<body>
+	<div class="wrapper clearfix">
+		<ul class="tabs clearfix" role='tablist'>
+			<li role="presentation"><a role="tab" aria-controls="tab-1" aria-selected="true" href="#tab-1">TAB 1</a></li>
+			<li role="presentation"><a role="tab" aria-controls="tab-2" href="#tab-2">TAB 2</a></li>
+			<li role="presentation"><a role="tab" aria-controls="tab-3" href="#tab-3">TAB 3</a></li>
+		</ul>
+		
+		<div class="tab-panels clearfix">
+			<div class="panel clearfix" id="tab-1" role="tabpanel" aria-hidden="false">
+				<h2>Tab 1</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sed placeat debitis atque, deleniti expedita ullam laborum pariatur maiores distinctio eius consectetur harum. Illo tempore, iste a expedita rem! Vitae!</p>
+			</div>
+			<div class="panel clearfix" id="tab-2" role="tabpanel" aria-hidden="true">
+				<h2>Tab 2</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic dolores animi unde laborum iste! Optio rerum, veniam velit laborum. Veritatis accusamus, ut inventore voluptas quaerat ipsum necessitatibus quam similique et aut neque laborum consectetur ipsa quod nemo, reiciendis a! Aliquam minus a fuga consequatur unde suscipit, culpa fugiat harum modi molestias quas? Magni totam obcaecati omnis, recusandae iusto, atque quisquam esse consectetur voluptas eos quas neque, facere nostrum ducimus ullam!</p>
+			</div>
+			<div class="panel clearfix" id="tab-3" role="tabpanel" aria-hidden="true">
+				<h2>Tab 3</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore minus nobis, ipsum iure cupiditate unde quisquam aliquid magni, numquam facilis neque sit, illo earum reiciendis debitis. Ea esse, tempora odit ut, necessitatibus quas. Dignissimos quisquam harum, totam laboriosam sequi corporis natus, fugit voluptatibus molestias eius, non nihil hic blanditiis vitae? Molestias architecto iure, hic culpa laborum recusandae corrupti repellendus voluptatem iste fugiat! Quod delectus esse id, aperiam fugit architecto tenetur. Maiores doloribus ipsam excepturi dolores dolorem quisquam iure, voluptates repellendus. Eveniet porro, voluptatibus. Esse blanditiis libero cupiditate beatae accusantium, iusto odit provident hic quam, quis voluptate, earum quod. Ducimus, quibusdam.</p>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	
+	<script src="js/script.js"></script>
+</body>
+</html>
